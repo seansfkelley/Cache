@@ -9,7 +9,7 @@ public struct Entry<T> {
   /// File path to the cached object
   public let filePath: String?
 
-  init(object: T, expiry: Expiry, filePath: String? = nil) {
+  public init(object: T, expiry: Expiry, filePath: String? = nil) {
     self.object = object
     self.expiry = expiry
     self.filePath = filePath
