@@ -1,7 +1,7 @@
 import Foundation
 
 /// A protocol used for saving and loading from storage
-public protocol StorageAware {
+public protocol StorageAware<Key, Value> {
   associatedtype Key: Hashable
   associatedtype Value
 
